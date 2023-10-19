@@ -9,23 +9,37 @@ body{
 
 /* alle paragrafen van de articles doorstrepen*/
 
-
+article p
+{
+  text-decoration: line-through;
+}
 
 
 /* alle links van de aside niet onderstreept en in het wit */
-
+aside a
+{
+  text-decoration: none;
+  color: wheat;
+}
 
 
 
 
 /* alle links die rechtstreeks afstammen van een article cursief en rood weergeven */
-
+article > a
+{
+  font-style: italic;
+  color: red;
+}
 
 
 
 
 /* De bullets bij de geneste lijst moeten verwijderd worden */
 
+ul ul {
+  list-style-type:none;
+}
 
 
 
@@ -33,19 +47,30 @@ body{
 moeten vet worden en niet doorstreept.
 */
 
-
+article h2+p
+{
+  font-weight: bold;
+  text-decoration: none;
+}
 
 
 
 /*  Geef de lijst in de aside een lightblue achtergrondkleur
 en wijzig de zwarte bolletjes in zwarte vierkantsje.*/
 
-
+aside ul
+{
+  background-color: lightblue;
+  list-style-type: square;
+}
 
 
 
 /* Alle links die rechtstreeks afstammen van een li achtergrond in het blauw*/
-
+li > a
+{
+  background-color: blue;
+}
 
 
 
