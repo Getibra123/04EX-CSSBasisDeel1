@@ -3,7 +3,10 @@ dat niet aanwezig is gebruik Helvetica. Sluit of met een
 generieke font family.
  */
 
-
+body
+{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 /* Alle div's hebben een hoogte (height) van 100 pixels en de 
@@ -12,13 +15,26 @@ achtergrondkleur is indianred. */
 
 
 
+div
+{
+     height: 100px;
+     background-color: indianred;
+     
+}
+
 
 
 /* Stel de ster (map images) in als achtergrondafbeelding 
 voor de eerste div. De ster moet gecentreerd worden. */
 
 
-
+div:first-child {
+     background-image: url(../images/star.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     
+     
+ }
 
 
 
@@ -26,11 +42,10 @@ voor de eerste div. De ster moet gecentreerd worden. */
      linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 131, 147, 1) 0%, rgba(9, 9, 121, 1) 100%); 
 */
 
-
-
-
-
-
+div:nth-child(2) {
+     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 131, 147, 1) 0%, rgba(9, 9, 121, 1) 100%);
+ }
+ 
 
 
 
